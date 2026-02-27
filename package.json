@@ -1,11 +1,8 @@
 {
+  "name": "jwt-auth-app",
+  "private": true,
   "scripts": {
-  "start": "vite",
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
-},
-  "dependencies": {
-    "path": "^0.12.7"
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm start --prefix backend"
   }
 }
