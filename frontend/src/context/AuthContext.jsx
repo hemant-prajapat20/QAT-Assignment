@@ -3,7 +3,7 @@ import axios from "axios";
 
 const AuthContext = createContext();
 
-const API_URL = "https://https://qat-assignment-13w6.onrender.com/api";
+const API_URL = "https://qat-assignment-13w6.onrender.com/api";
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
