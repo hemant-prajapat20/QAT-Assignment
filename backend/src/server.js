@@ -20,7 +20,7 @@ const app = express();
 app.use(cors({ origin: "http://localhost:3000", credentials: true })); // allow your frontend dev server
 app.use(express.json());
 
-// 1️⃣ API Routes first
+//  API Routes first
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
 
@@ -32,8 +32,8 @@ app.get("*", (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-mongoose
-  .connect(process.env.MONGO_URI)
+// Connect to MongoDB and start server
+mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     console.log("MongoDB connected");
     app.listen(PORT, () => {
