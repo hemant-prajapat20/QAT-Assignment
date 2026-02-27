@@ -2,7 +2,7 @@
   "name": "jwt-auth-app",
   "private": true,
   "scripts": {
-    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "build": "npm install --prefix backend && npm install --prefix frontend && chmod +x frontend/node_modules/.bin/vite && npm run build --prefix frontend",
     "start": "npm start --prefix backend"
   }
 }
